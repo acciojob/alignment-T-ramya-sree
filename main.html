@@ -3,92 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Media Table and List</title>
+  <title>HTML Assignment 3</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
     }
 
-    table {
+    h1 {
+      text-align: center;
+    }
+
+    table.middle {
       border-collapse: collapse;
-      width: 400px;
+      margin: auto;
+      width: 50%;
     }
 
-    th, td {
-      border: 1px solid #ccc;
+    td {
+      border: 1px solid black;
       padding: 10px;
-      text-align: left;
     }
 
-    thead {
-      background-color: #f2f2f2;
+    .center {
+      text-align: center;
     }
 
-    h2 {
-      margin-top: 30px;
+    .right {
+      text-align: right;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- SEMANTIC TABLE -->
-  <table>
+  <!-- HEADING -->
+  <h1>HTML Assignment #3</h1>
 
-    <thead>
-      <tr>
-        <th>Roll Number</th>
-        <th>Name</th>
-      </tr>
-    </thead>
+  <!-- TABLE 1 -->
+  <table id="table-1" class="middle">
 
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Aman</td>
-      </tr>
+    <tr>
+      <td id="t11">A1</td>
+      <td>A2</td>
+      <td class="right">A3</td>
+    </tr>
 
-      <tr>
-        <td>2</td>
-        <td>Riya</td>
-      </tr>
+    <tr>
+      <td class="center">B1</td>
+      <td class="center">B2</td>
+      <td class="right">B3</td>
+    </tr>
 
-      <tr>
-        <td>3</td>
-        <td>John</td>
-      </tr>
-    </tbody>
+    <tr>
+      <td>C1</td>
+      <td>C2</td>
+      <td class="right">C3</td>
+    </tr>
 
   </table>
-
-  <!-- HEADING -->
-  <h2>List of medias</h2>
-
-  <!-- ORDERED LIST -->
-  <ol>
-
-    <!-- Image -->
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
-    </li>
-
-    <!-- Video -->
-    <li>
-      <video width="320" height="240" controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-      </video>
-    </li>
-
-    <!-- Audio -->
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-      </audio>
-    </li>
-
-  </ol>
 
 </body>
 
